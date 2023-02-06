@@ -14,8 +14,8 @@ public class Usuario {
         System.out.println("Nome: " + this.getNome());
         System.out.println("CPF: " + this.getCpf());
         System.out.println("Email: " + this.getEmail());
-        System.out.println("Numero: " + this.getNumero());
-        System.out.println("Status da conta: " + this.isStatus());
+        System.out.println("Numero 1: " + this.getNumero());
+        System.out.println("Joel viado");
     }
 
     public void criarConta(String nome, String cpf, String email, String numero){
