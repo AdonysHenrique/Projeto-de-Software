@@ -8,8 +8,6 @@ public class Main {
         User1.estadoAtual();
         User1.modificarDados();
         User1.estadoAtual();
-        User1.modificarDados("CPF", "131.219.894-43");
-        User1.estadoAtual();
 
     }
 }

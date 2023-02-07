@@ -49,16 +49,16 @@ public class Usuario {
         System.out.println("Digite o novo dado: ");
         String novodado = scanner.next();
 
-        if(Objects.equals(Dado, "CPF")){
+        if(Dado.equalsIgnoreCase("CPF")){
             setCpf(novodado);
             System.out.println(novodado);
-        } else if (Objects.equals(Dado, "Nome")) {
+        } else if (Dado.equalsIgnoreCase("Nome")) {
             setNome(novodado);
             System.out.println(novodado);
-        } else if (Objects.equals(Dado, "Email")) {
+        } else if (Dado.equalsIgnoreCase("Email")) {
             setEmail(novodado);
             System.out.println(novodado);
-        }else if (Objects.equals(Dado, "Numero")){
+        }else if (Dado.equalsIgnoreCase("Numero")){
             setNumero(novodado);
             System.out.println(novodado);
         }else {
