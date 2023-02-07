@@ -26,6 +26,20 @@ public class Usuario {
         setStatus(true);
     }
 
+    public void modificarDados(String dado, String novodado){
+        System.out.println("Qual dado você quer modificar?");
+
+        if(dado == "CPF"){
+            setCpf(novodado);
+        } else if (dado == "Nome") {
+            setNome(novodado);
+        } else if (novodado == "Email") {
+            setEmail(dado);
+        }else if (dado == "Numero"){
+            setNumero(novodado);
+        }
+    }
+
     public String getNome() {
         return nome;
     }
