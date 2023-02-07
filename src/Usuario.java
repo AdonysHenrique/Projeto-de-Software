@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Usuario {
 
     public Usuario() {
@@ -18,12 +20,21 @@ public class Usuario {
         System.out.println("Status da conta: " + this.isStatus());
     }
 
-    public void criarConta(String nome, String cpf, String email, String numero){
-        setNome(nome);
-        setCpf(cpf);
-        setEmail(email);
-        setNumero(numero);
-        setStatus(true);
+    public void criarConta(){
+
+        Scanner Leitor = new Scanner(System.in);
+        System.out.println("Digite seu nome:");
+        String Usuario = Leitor.nextLine();
+        setNome(Usuario);
+        System.out.println("Digite seu CPF:");
+        String Cpf = Leitor.nextLine();
+        setCpf(Cpf);
+        System.out.println("Digite seu Email:");
+        String Email = Leitor.nextLine();
+        setEmail(Email);
+        System.out.println("Digite seu numero:");
+        String Numero = Leitor.nextLine();
+        setNumero(Numero);
     }
 
     public String getNome() {
