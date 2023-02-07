@@ -6,5 +6,7 @@ public class Main {
         Usuario User1 = new Usuario();
         User1.criarConta();
         User1.estadoAtual();
+        User1.modificarDados();
+        User1.estadoAtual();
     }
 }

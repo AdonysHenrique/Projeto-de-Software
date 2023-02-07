@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Usuario {
@@ -21,7 +22,7 @@ public class Usuario {
     }
 
     public void criarConta(){
-
+        System.out.println("-----------------");
         Scanner Leitor = new Scanner(System.in);
         System.out.println("Digite seu nome:");
         String Usuario = Leitor.nextLine();
@@ -35,8 +36,35 @@ public class Usuario {
         System.out.println("Digite seu numero:");
         String Numero = Leitor.nextLine();
         setNumero(Numero);
+
+        setStatus(true);
     }
 
+    public void modificarDados(){
+        System.out.println("-----------------");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual dado você quer modificar? ");
+        System.out.println("Opções: CPF, Nome, Email e Numero");
+        String Dado = scanner.nextLine();
+        System.out.println("Digite o novo dado: ");
+        String novodado = scanner.next();
+
+        if(Objects.equals(Dado, "CPF")){
+            setCpf(novodado);
+            System.out.println(novodado);
+        } else if (Objects.equals(Dado, "Nome")) {
+            setNome(novodado);
+            System.out.println(novodado);
+        } else if (Objects.equals(Dado, "Email")) {
+            setEmail(novodado);
+            System.out.println(novodado);
+        }else if (Objects.equals(Dado, "Numero")){
+            setNumero(novodado);
+            System.out.println(novodado);
+        }else {
+            System.out.println("Tente novamente. Opções de dados: CPF, Nome, Email, Numero.");
+        }
+    }
     public String getNome() {
         return nome;
     }
