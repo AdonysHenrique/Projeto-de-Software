@@ -1,5 +1,5 @@
-import java.util.Objects;
 import java.util.Scanner;
+import java.util.Objects;
 
 public class Usuario {
 
@@ -20,6 +20,8 @@ public class Usuario {
         System.out.println("Numero: " + this.getNumero());
         System.out.println("Status da conta: " + this.isStatus());
     }
+
+
 
     public void criarConta(){
         System.out.println("-----------------");
