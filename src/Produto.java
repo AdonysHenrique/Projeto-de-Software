@@ -9,9 +9,11 @@ public class Produto {
     public String codigo;
     public String nome;
     public int quantidade;
-    public double valorDeCompra;
     public String tipo;
+    public double valorDeCompra;
     public double valorDeVenda;
+
+
 
     /*
 
